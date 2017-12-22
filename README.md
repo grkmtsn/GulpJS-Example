@@ -1,1 +1,3 @@
 # GulpJS-Example
+
+run gulp
