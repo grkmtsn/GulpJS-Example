@@ -1,0 +1,23 @@
+$bgColor: #ccc;
+$borderColor : #00d1b2;
+$inputMedium: 240px;
+$large-font: 24px;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+body{
+    background-color: $bgColor;
+    @include border-radius(5px);
+    border:1px solid $borderColor;
+    padding: 30px;
+    h1{
+        font-size: $large-font;
+
+    }
+    input{
+        width: $inputMedium!important;
+    }
+}
